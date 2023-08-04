@@ -1,0 +1,126 @@
+:root {
+  --bg-color: hsl(216, 12%, 8%);
+  --text-color: hsl(0, 0%, 100%);
+  --card-color: hsl(213, 19%, 18%);
+  --grey-color: hsla(216, 12%, 54%, 0.2);
+  --text-gray-color: hsl(217, 12%, 63%);
+  --orange-color: hsl(25, 97%, 53%);
+}
+ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  height: 100vh;
+}
+
+.card {
+    margin: 9em auto;
+    background-color: var(--card-color);
+    border-radius: 1.2em;
+    width: 400px;
+    height: 400px;
+    padding: 2em;
+}
+
+@media (max-width: 425px) {
+    .card{
+        width: 90%;
+        padding: 2em 1.5em;
+    }
+}
+
+.rating-state-content, .thank-you-state-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.hidden {
+    display: none;
+}
+
+.thank-you-state-content {
+align-items: center;
+text-align:center;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2em;
+    padding-bottom: 0.3em;
+}
+
+p {
+    line-height: 1.75rem;
+    color: var(--text-gray-color);
+}
+
+.circle {
+    background-color: var(--grey-color);
+    width: 1.3em;
+    height: 1.3em;
+    padding: 1.5em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-gray-color);
+}
+
+
+
+.rating-items {
+    display: flex;
+    flex-direction: flex;
+    justify-content: space-between;
+}
+
+.circle-btn:hover {
+cursor: pointer;
+background-color: var(--orange-color);
+color: var(--text-color);
+}
+
+.circle-btn:focus {
+    background-color: var(--text-gray-color);
+    color: var(--text-color);
+    outline: none;
+    }
+
+.button {
+    width: 100%;
+    padding: 0.8em;
+    border-radius: 2em;
+    background-color: var(--orange-color);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.button:hover {
+    color: var(--orange-color);
+    background-color: var(--text-color);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.selected-rate {
+    background-color: var(--grey-color);
+    color: var(--orange-color);
+    padding: 0.5em 1em;
+    border-radius: 2em;
+}
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }

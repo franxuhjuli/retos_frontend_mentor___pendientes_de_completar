@@ -1,0 +1,100 @@
+:root {
+    --tomato: hsl(4, 100%, 67%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--charcoal-grey);
+}
+
+body {
+    background-color: var(--charcoal-grey);
+}
+
+.card {
+    background-color: var(--white);
+    height: auto;
+    width: 900px;
+    margin: 300px;
+    padding: 1em;
+    border-radius: 1.5em;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 4em 3em;
+}
+
+.card-image {}
+
+h2 {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: var(--dark-slate-grey);
+}
+
+p {
+    line-height: 1.5em;
+}
+
+form p {
+    font-weight: 700;
+    line-height: 2.8em;
+}
+
+input {
+    padding: 1em;
+    width: 100%;
+    border-radius: 0.4em;
+    margin-bottom: 1.4em;
+}
+
+input[type=mail] {
+    border: 2px solid var(--grey);
+}
+
+.btn {
+    text-align: center;
+    background-color: var(--dark-slate-grey);
+    color: var(--white);
+}
+
+ul {
+    list-style-position: inside;
+    list-style: none;
+    line-height: 2em;
+}
+
+li {
+    display: flex;
+}
+
+li img {
+    padding-right: 1em;
+}
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
